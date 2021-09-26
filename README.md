@@ -1,6 +1,5 @@
 # trackwatch-backend
 
----
 ### **Idea**
 
 There is an overwhelming amount of movies and series available to watch for a person. Thing is, sometimes it either hard to remember whether a move is good or if you've already seen it before. There are multiple services like this aimed at tracking anime, a style of animation native to Japan, and some that track movies exclusively, yet there are no such thing as a service that combines those together. Here's where **trackWatch** comes in.
