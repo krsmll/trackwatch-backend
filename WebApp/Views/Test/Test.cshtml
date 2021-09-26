@@ -1,0 +1,52 @@
+﻿@model WebApp.ViewModels.Test.TestViewModel
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>Test</h1>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Characters.FirstOrDefault()!.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Characters.FirstOrDefault()!.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Characters.FirstOrDefault()!.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Characters.FirstOrDefault()!.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Characters.FirstOrDefault()!.Birthdate)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Characters)
+    {
+        <tr>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.Description
+            </td>
+            <td>
+                @item.Age
+            </td>
+            <td>
+                @item.Birthdate
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

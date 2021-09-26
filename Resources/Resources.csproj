@@ -1,0 +1,436 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Views\Shared\_Layout.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>_Layout.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Character.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Character.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\CharacterInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\CharacterPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\CoverPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CoverPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Episode.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Episode.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\EpisodeInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>EpisodeInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\FavCharacterList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>FavCharacterList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Format.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Format.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Genre.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Genre.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Person.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Person.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\PersonPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\RatingScale.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>RatingScale.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Role.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Role.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Status.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Status.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WatchList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WatchList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\Work.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Work.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkAuthor.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkAuthor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkAuthorRole.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkAuthorRole.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkCharacter.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkCharacter.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkGenre.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkGenre.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\WorkType.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkType.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Character.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Character.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\CharacterInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\CharacterPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\CoverPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CoverPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Episode.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Episode.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\EpisodeInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>EpisodeInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\FavCharacterList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>FavCharacterList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Format.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Format.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Genre.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Genre.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Person.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Person.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\PersonPicture.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonPicture.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\RatingScale.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>RatingScale.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Role.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Role.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Status.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Status.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WatchList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WatchList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\Work.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Work.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkAuthor.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkAuthor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkAuthorRole.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkAuthorRole.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkCharacter.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkCharacter.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkGenre.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkGenre.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkInList.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkInList.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\WorkType.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkType.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="DAL.App.DTO\CharacterPerson.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterPerson.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="BLL.App.DTO\CharacterPerson.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>CharacterPerson.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Shared\_Layout.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>_Layout.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Character.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Character.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\CharacterInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\CharacterPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\CoverPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CoverPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Episode.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Episode.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\EpisodeInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>EpisodeInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\FavCharacterList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>FavCharacterList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Format.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Format.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Genre.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Genre.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Person.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Person.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\PersonPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\RatingScale.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RatingScale.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Role.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Role.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Status.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Status.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WatchList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WatchList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\Work.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Work.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkAuthor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkAuthor.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkAuthorRole.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkAuthorRole.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkCharacter.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkCharacter.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkGenre.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkGenre.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\WorkType.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkTyper.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Character.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Character.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\CharacterInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\CharacterPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\CoverPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CoverPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Episode.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Episode.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\EpisodeInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>EpisodeInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\FavCharacterList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>FavCharacterList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Format.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Format.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Genre.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Genre.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Person.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Person.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\PersonPicture.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonPicture.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\RatingScale.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RatingScale.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Role.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Role.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Status.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Status.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WatchList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WatchList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\Work.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Work.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkAuthor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkAuthor.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkAuthorRole.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkAuthorRole.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkCharacter.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkCharacter.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkGenre.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkGenre.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkInList.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkInList.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\WorkType.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkType.resx</DependentUpon>
+      </Compile>
+      <Compile Update="DAL.App.DTO\CharacterPerson.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterPerson.resx</DependentUpon>
+      </Compile>
+      <Compile Update="BLL.App.DTO\CharacterPerson.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CharacterPerson.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
